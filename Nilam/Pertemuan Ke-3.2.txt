@@ -1,0 +1,41 @@
+Nama  : Putri Nilam
+Kelas : IF 31
+NPM   : 2226250116
+
+(Pertemuan Ke-3.2)
+
+ class Kendaraan {
+  String merek;
+  int tahunProduksi;
+ 
+  Kendaraan  (this.merek, this.tahunProduksi);
+   
+    void infoMobil () {
+    print ('Merk $merek, Tahun $tahunProduksi');
+   
+  }
+}
+ 
+class Mobil extends Kendaraan {
+  int jumlahPintu;
+ 
+  //construktor
+  Mobil (String merek, int tahunProduksi, this.jumlahPintu); super (merek, tahunProduksi);
+   
+    //method
+    void infoMobil () {
+    print ('Mobil $merk, Tahun Produksi : $tahunProduksi, Pintu : $jumlahPintu');
+  }
+}
+
+void main () {
+ 
+ 
+  var mobil= Mobil ('mobil', 2022,2);
+  mobil.infoKendaraan (); //dart class kendaraan
+  mobil.infoMobil ();
+}
+
+
+
+

@@ -1,0 +1,72 @@
+Nama  : Putri Nilam
+Kelas : IF 31
+NPM   : 2226250116
+
+(Pertemuan Ke-2)
+
+void main () {
+  String nama = " Putri Nilam";
+  int usia = 19;
+ 
+  print ("hallo, nama saya $nama dan usia saya $usia tahun");
+  print ("hallo, nama saya" + nama + " Usia saya " + usia.toString() + " Tahun");
+ 
+  var alamat = "Jl kerinci Pusri Borang";//karena var tipe datauniversal
+  print(alamat.runtimeType); //untuk mengetahui tipe data nya apa
+  var alamat1 = " Blok A1 No 5 " ;
+  print (alamat1.runtimeType);
+ 
+ 
+  //collection
+  var numberList = [1, 2, 3, 4] ; //list
+  var stringList = ["Hello", " Universitas Multi Data palembang", "Dart"];///list
+  print(stringList);
+ 
+  var dynamicList = [1, "universitas multi Data Palembang", true];
+  print(dynamicList.runtimeType); //List<dynamic>
+  print(dynamicList[1]);
+ 
+  //set
+  Set<int> mySet = new Set.from([1,2,3,4,2,1]);
+  print(mySet);
+ 
+  var setA = {1,2,3};
+  var setB = {1,5,7};
+ 
+  //tambahkan 4 ke dalam setA
+  setA.add(4);
+  print(setA); //1, 2, 3,4
+ 
+  //Menghapus 7 dari setB
+  setB.remove(7);
+  print(setB);
+ 
+  //Union
+  var setUnion = setA.union(setB);
+  print(setUnion);
+ 
+  //Intersection
+  var setIntersection = setA.intersection(setB);
+  print(setIntersection);
+ 
+  //coba gunakan fungsi union dan intersection pada setA dan setB
+  //apa yang dihasilkan dari fungsi union?
+  //apa yang dihasilkan dari fngsi intersection?
+ 
+ 
+  int angka1 = 18;
+  print("Angka 1 $angka1");
+ 
+  var primeNUmbers = [2,3,5,7,11,13,17,19];
+ 
+  var searchNumber = 13;
+  for (int i = 0; i< primeNUmbers.length; i++) {
+    if(searchNumber == primeNUmbers[i]) {
+      print ("$searchNumber adalah bilangan prime ke- ${i+1}"); //perbaiki 13 adalah bilangann prima ke 6
+             break ;
+    }
+    print ("$searchNumber != $primeNUmbers[i]"); //perbaiki
+  }
+
+
+ 

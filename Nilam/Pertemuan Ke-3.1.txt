@@ -1,0 +1,34 @@
+Nama  : Putri Nilam
+Kelas : IF 31
+NPM   : 2226250116
+
+(Pertemuan Ke-3A)
+  void main ()
+{
+  var mobil1 = Mobil ('Toyota', 'Carry', 2022);
+  var mobil2 = Mobil ('Honda', 'Civic', 2021);
+   
+    mobil1.infoMobil();
+    mobil2.infoMobil();
+   
+}
+
+class Mobil
+{
+String merk; //property/ atribut
+String model ;
+int tahunProduksi;
+
+//constructor
+Mobil(this.merk, this.model, this.tahunProduksi);
+
+//method
+void infoMobil () {
+  print ('$merk $model, Tahun : $tahunProduksi');
+ 
+}
+}
+
+
+
+
